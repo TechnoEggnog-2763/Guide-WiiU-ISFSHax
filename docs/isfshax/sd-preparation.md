@@ -24,3 +24,24 @@ Your SD Card will need to be formatted as FAT32. If your SD Card is not formatte
  - The `wiiu` folders should be merged if not done automatically.
 7. Extract the [root.rpx](https://github.com/wiiu-env/PayloadFromRPX/releases) and place it on the root of your SD Card. Rename it to `launch.rpx`.
 
+## SD Card Layout
+
+::: details Click here to show the final SD Card layout.
+
+```
+💾sd:
+ ┣ 📂wiiu
+ ┃   ┣ 📂ios_plugins
+ ┃   ┃  ┣ 📜wafel_core.ipx
+ ┃   ┃  ┗ 📜wafel_isfshax_patch.ipx
+ ┃   ┣ 📂payloads
+ ┃   ┃  ┗ 📂fw_img loader
+ ┃   ┃  ┃  ┗ 📜payload.elf
+ ┣ 📜fw.img
+ ┣ 📜ios.img
+ ┣ 📜superblock.img
+ ┣ 📜superblock.img.sha
+ ┗ 📜launch.rpx
+```
+
+:::
